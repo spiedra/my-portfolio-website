@@ -5,6 +5,10 @@ const Container = styled.div`
   border: ${(props) => `1px solid ${props.theme.colors.onyx}`};
   background-color: ${(props) => props.theme.colors.lightBlue};
   font-family: ${(props) => props.theme.fonts[0]};
+
+  @media (min-width: 425px){
+    background-color: red;
+  }
 `;
 
 const Heading = styled.h1`
