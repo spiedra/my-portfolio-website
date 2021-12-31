@@ -1,13 +1,6 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import theme from '../styles/theme'
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-`
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "../styles/GlobalStyle";
+import theme from "../styles/theme";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -17,5 +10,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
