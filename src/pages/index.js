@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  ${props => props.theme.mixins.flexCenter}
-  
-  @media ${(props) => props.theme.bp.laptop}{
+  ${(props) => props.theme.mixins.flexCenter}
+
+  @media ${(props) => props.theme.bp.laptop} {
     background-color: red;
   }
 `;
