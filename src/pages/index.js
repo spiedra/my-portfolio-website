@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Container>
-        <h2>By the power of styled-components!</h2>
+        <h2>This is the main</h2>
       </Container>
     </>
   );
