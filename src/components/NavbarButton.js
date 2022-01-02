@@ -1,13 +1,15 @@
 import styled, { css } from "styled-components";
 
-const variants = {};
-
 const Button = styled.button`
+  display: flex;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  display: flex;
-  padding: 0;
+  padding: 0 2rem;
+
+  @media ${(props) => props.theme.bp.tablet} {
+    display: none;
+  }
 `;
 
 const FirstLine = styled.path`

@@ -21,10 +21,9 @@ const mixins = {
   line: css`
     fill: transparent;
     stroke: black;
-    stroke-linecap: round; 
+    stroke-linecap: round;
     stroke-width: 6;
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--tran-dasharray), var(--tran-dashoffset);
   `,
 };
 
