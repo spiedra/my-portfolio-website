@@ -30,6 +30,7 @@ const Nav = styled.nav`
   box-shadow: 0 2px 15px var(--nav-box-shadow);
   transform: translate(0);
   transition: all 0.2s ease-out;
+  background-color: var(--h-backgroud);
 `;
 
 const NavMenu = styled.ul`
@@ -37,13 +38,14 @@ const NavMenu = styled.ul`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
   width: 100%;
   transition: max-height 0.3s ease-in;
   max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
   overflow: hidden;
   padding: 0;
-  margin-top: 0.8rem;
+  margin-top: 0;
+  background-color: var(--h-backgroud);
+  box-shadow: 0 4px 2px -2px var(--nav-box-shadow);
 
   @media ${(props) => props.theme.bp.tablet} {
     flex-direction: row;
@@ -51,6 +53,8 @@ const NavMenu = styled.ul`
     padding: 2rem 0rem;
     transition: none;
     margin: 0;
+    max-height: 0;
+    box-shadow: none;
   }
 
   @media ${(props) => props.theme.bp.laptop} {
@@ -90,6 +94,12 @@ const Logo = styled.a`
   }
 `;
 
+const SocialMenu = styled.ul`
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: center;
+`;
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -99,7 +109,14 @@ export default function Navbar() {
         JC<span>Spiedra</span>
       </Logo>
       <NavBarButton isOpen={isOpen} handleSubmit={() => setIsOpen(!isOpen)} />
-      <NavMenu isOpen={isOpen}>{listNavbarElements}</NavMenu>
+      <NavMenu isOpen={isOpen}>
+        {listNavbarElements}
+        {/* <SocialMenu>
+          <li>
+            <a>GitHub</a>
+          </li>
+        </SocialMenu> */}
+      </NavMenu>
     </Nav>
   );
 }

@@ -36,6 +36,10 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  ul {
+    list-style: none;
+  }
+
   main {
     display: flex;
     flex-direction: column;

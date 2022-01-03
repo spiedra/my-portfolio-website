@@ -2,18 +2,22 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const NavItem = styled.li`
-  padding: 1rem 2rem;
+  padding: 1.4rem 2rem;
+
+  @media ${(props) => props.theme.bp.tablet} {
+    padding: 1rem 2rem;
+  }
 `;
 
 const NavLink = styled.a`
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  color: #67bc98;
+  color: var(--silver-tree);
   font-size: var(--nav-font-sizeL);
 
   &:hover {
-    color: #7b7fda;
+    color: var(--chetwode-blue);
   }
 
   @media ${(props) => props.theme.bp.tablet} {
