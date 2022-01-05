@@ -24,7 +24,6 @@ const Nav = styled.nav`
   align-items: center;
   flex-wrap: wrap;
   background: transparent;
-  height: 4.6875rem;
   position: fixed;
   z-index: 500;
   box-shadow: 0 2px 15px var(--nav-box-shadow);
@@ -34,34 +33,48 @@ const Nav = styled.nav`
 `;
 
 const NavMenu = styled.ul`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  transition: max-height 0.3s ease-in;
-  max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
-  overflow: hidden;
-  padding: 0;
-  margin-top: 0;
-  background-color: var(--h-backgroud);
-  box-shadow: 0 4px 2px -2px var(--nav-box-shadow);
+  display: none;
 
   @media ${(props) => props.theme.bp.tablet} {
+    display: flex;
     flex-direction: row;
-    width: auto;
-    padding: 2rem 0rem;
-    transition: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
     margin: 0;
-    max-height: 0;
-    box-shadow: none;
+    width: auto;
   }
+`;
 
-  @media ${(props) => props.theme.bp.laptop} {
-    flex-direction: row;
-    width: auto;
-    padding: 2rem 3rem;
-    margin: 0;
+const NavMenuMobile = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 104%;
+  left: 0;
+  right: 0;
+  background-color: var(--h-backgroud);
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: 0.4s;
+  pointer-events: none;
+  font-size: 28px;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 7px -2px var(--nav-box-shadow);
+  padding: 0;
+  margin: 0;
+
+  ${({ isOpen }) =>
+    isOpen &&
+    css`
+      opacity: 1;
+      transform: translateY(-1%);
+      pointer-events: auto;
+    `}
+
+  @media ${(props) => props.theme.bp.tablet} {
+    display: none;
   }
 `;
 
@@ -75,6 +88,22 @@ const Logo = styled.a`
   span {
     font-weight: 300;
     font-size: 1.375rem;
+  }
+
+  @media ${(props) => props.theme.bp.mobileS} {
+    font-size: 1.6rem;
+
+    span {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media ${(props) => props.theme.bp.mobileM} {
+    font-size: 1.775rem;
+
+    span {
+      font-size: 1.375rem;
+    }
   }
 
   @media ${(props) => props.theme.bp.tablet} {
@@ -109,14 +138,15 @@ export default function Navbar() {
         JC<span>Spiedra</span>
       </Logo>
       <NavBarButton isOpen={isOpen} handleSubmit={() => setIsOpen(!isOpen)} />
-      <NavMenu isOpen={isOpen}>
+      <NavMenu>{listNavbarElements}</NavMenu>
+      <NavMenuMobile isOpen={isOpen}>
         {listNavbarElements}
         {/* <SocialMenu>
           <li>
             <a>GitHub</a>
           </li>
         </SocialMenu> */}
-      </NavMenu>
+      </NavMenuMobile>
     </Nav>
   );
 }
