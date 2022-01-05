@@ -21,16 +21,12 @@ const SocialMediaMenu = styled.ul`
   margin: 1.4rem 0;
 `;
 
-const SocialMediaItem = styled.li``;
-
-const SocialMediaLink = styled.a``;
-
 const listSocialMediaElements = socialMediaElements.map((element, index) => (
-  <SocialMediaItem key={index}>
-    <SocialMediaLink href={element.route} target="_blank">
+  <li key={index}>
+    <a href={element.route} target="_blank">
       {element.icon}
-    </SocialMediaLink>
-  </SocialMediaItem>
+    </a>
+  </li>
 ));
 
 export default function SocialMediaBox() {
