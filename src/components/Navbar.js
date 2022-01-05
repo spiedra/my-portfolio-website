@@ -124,12 +124,6 @@ const Logo = styled.a`
   }
 `;
 
-const SocialMenu = styled.ul`
-  margin-top: 10px;
-  flex-direction: row;
-  justify-content: center;
-`;
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
