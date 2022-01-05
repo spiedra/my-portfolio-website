@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled, { css } from "styled-components";
 import NavBarButton from "./NavBarButton";
 import NavbarElement from "./NavbarElement";
+import SocialMediaBox from "./SocialMediaBox";
 
 const navbarElements = [
   { key: 1, route: "/", text: "About me" },
@@ -141,11 +142,7 @@ export default function Navbar() {
       <NavMenu>{listNavbarElements}</NavMenu>
       <NavMenuMobile isOpen={isOpen}>
         {listNavbarElements}
-        {/* <SocialMenu>
-          <li>
-            <a>GitHub</a>
-          </li>
-        </SocialMenu> */}
+        <SocialMediaBox />
       </NavMenuMobile>
     </Nav>
   );
