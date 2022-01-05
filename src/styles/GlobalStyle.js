@@ -7,9 +7,37 @@ const GlobalStyle = createGlobalStyle`
   ${normalize}
   ${variables}
 
+  * {
+    font-family: inherit;
+    font: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
   body {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-family: "Source Code Pro", monospace;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 0.8rem;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
   }
 
   main {

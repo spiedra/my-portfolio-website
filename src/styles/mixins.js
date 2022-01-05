@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 
 const mixins = {
   flexCenter: css`
@@ -16,6 +16,14 @@ const mixins = {
   link: css`
     text-decoration: none;
     color: inherit;
+  `,
+
+  line: css`
+    fill: transparent;
+    stroke: black;
+    stroke-linecap: round;
+    stroke-width: 6;
+    transition: var(--tran-dasharray), var(--tran-dashoffset);
   `,
 };
 
