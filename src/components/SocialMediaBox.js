@@ -23,7 +23,7 @@ const SocialMediaMenu = styled.ul`
 
 const listSocialMediaElements = socialMediaElements.map((element, index) => (
   <li key={index}>
-    <a href={element.route} target="_blank">
+    <a href={element.route} target="_blank" rel="noreferrer">
       {element.icon}
     </a>
   </li>

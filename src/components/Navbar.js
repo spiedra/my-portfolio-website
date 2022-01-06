@@ -12,10 +12,9 @@ const navbarElements = [
 ];
 
 const listNavbarElements = navbarElements.map((element) => (
-  <NavbarElement
-    key={element.key}
-    children={{ route: element.route, text: element.text }}
-  />
+  <NavbarElement key={element.key}>
+    {{ route: element.route, text: element.text }}
+  </NavbarElement>
 ));
 
 const Nav = styled.nav`
