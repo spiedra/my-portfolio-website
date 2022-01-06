@@ -19,6 +19,30 @@ const SocialMediaMenu = styled.ul`
   width: 50%;
   padding: 0;
   margin: 1.4rem 0;
+
+  @media ${(props) => props.theme.bp.tablet} {
+    justify-content: space-between;
+    height: 38%;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    left: 25px;
+    right: auto;
+    z-index: 20;
+    font-size: 1.7rem;
+    bottom: 0;
+    width: auto;
+    margin: 0;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 90px;
+      margin: 0 auto;
+      background-color: var(--media-sticky);
+    }
+  }
 `;
 
 const listSocialMediaElements = socialMediaElements.map((element, index) => (

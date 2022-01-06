@@ -13,6 +13,8 @@ const variables = css`
     --tran-dasharray: stroke-dasharray 400ms cubic-bezier(0.4, 0, 0.2, 1);
     --tran-dashoffset: stroke-dashoffset 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    --media-sticky: #CCCCCC;
+
     --btn-transition: all 0.2s ease-out;
 
     --nav-transition: all 0.2s ease-out;
