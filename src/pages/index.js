@@ -1,19 +1,37 @@
 import styled from "styled-components";
 
-const Container = styled.div`
-  ${(props) => props.theme.mixins.flexCenter}
-
-  @media ${(props) => props.theme.bp.laptop} {
-    background-color: red;
-  }
+const LandingSection = styled.section`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 85%;
+  min-height: 90vh;
+  padding: 10px 0;
 `;
+
+const IntroContainer = styled.article``;
+
+const MainImageContainer = styled.div``;
+
+const HiMessage = styled.p``;
+
+const MyName = styled.h1``;
+
+const Presentation = styled.p``;
 
 export default function Home() {
   return (
     <>
-      <Container>
-        <h1>This is the main</h1>
-      </Container>
+      <LandingSection>
+        <IntroContainer>
+          <HiMessage>Hi, my name is</HiMessage>
+          <MyName>Juan Carlos Sequeira Piedra</MyName>
+          <Presentation>I am a business informatics student</Presentation>
+        </IntroContainer>
+        <MainImageContainer>
+          
+        </MainImageContainer>
+      </LandingSection>
     </>
   );
 }
