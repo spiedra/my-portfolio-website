@@ -9,7 +9,7 @@ const Container = styled.section`
 
   @media ${(props) => props.theme.bp.tablet} {
     flex-direction: row;
-    width: 85%;
+    width: 80%;
     min-height: 90vh;
   }
 `;
