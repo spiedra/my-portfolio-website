@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SvgDeveloper from "../components/SvgComponents/SvgDeveloper";
 
 const LandingSection = styled.section`
   display: flex;
@@ -11,7 +12,11 @@ const LandingSection = styled.section`
 
 const IntroContainer = styled.article``;
 
-const MainImageContainer = styled.div``;
+const MainImageContainer = styled.div`
+    width: 300px;
+    height: 300px;
+    ${(props) => props.theme.mixins.flexCenter}
+`;
 
 const HiMessage = styled.p``;
 
@@ -29,7 +34,7 @@ export default function Home() {
           <Presentation>I am a business informatics student</Presentation>
         </IntroContainer>
         <MainImageContainer>
-          
+          <SvgDeveloper/>
         </MainImageContainer>
       </LandingSection>
     </>
