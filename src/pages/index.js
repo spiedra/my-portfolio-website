@@ -13,8 +13,8 @@ const LandingSection = styled.section`
 const IntroContainer = styled.article``;
 
 const MainImageContainer = styled.div`
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
     ${(props) => props.theme.mixins.flexCenter}
 `;
 
