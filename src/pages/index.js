@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Container>
-        {/* <h1>This is the main</h1> */}
+        <h1>This is the main</h1>
       </Container>
     </>
   );
