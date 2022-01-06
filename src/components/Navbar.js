@@ -28,7 +28,7 @@ const Nav = styled.nav`
   z-index: 500;
   box-shadow: 0 2px 15px var(--nav-box-shadow);
   transform: translate(0);
-  transition: all 0.2s ease-out;
+  transition: var(--nav-transition);
   background-color: var(--h-backgroud);
 `;
 
