@@ -51,7 +51,7 @@ const ThirdLine = styled.path`
     `}
 `;
 
-export default function NavBarButton({ isOpen, handleSubmit }) {
+export default function NavbarButton({ isOpen, handleSubmit }) {
   return (
     <Button onClick={handleSubmit}>
       <svg width="38" height="38" viewBox="0 0 100 100">

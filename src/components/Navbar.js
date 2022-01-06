@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
-import NavBarButton from "./NavBarButton";
 import NavbarElement from "./NavbarElement";
+import NavbarButton from "./NavbarButton";
 import SocialMediaBox from "./SocialMediaBox";
 
 const navbarElements = [
@@ -12,10 +12,9 @@ const navbarElements = [
 ];
 
 const listNavbarElements = navbarElements.map((element) => (
-  <NavbarElement
-    key={element.key}
-    children={{ route: element.route, text: element.text }}
-  />
+  <NavbarElement key={element.key}>
+    {{ route: element.route, text: element.text }}
+  </NavbarElement>
 ));
 
 const Nav = styled.nav`
@@ -132,7 +131,7 @@ export default function Navbar() {
       <Logo href="/">
         JC<span>Spiedra</span>
       </Logo>
-      <NavBarButton isOpen={isOpen} handleSubmit={() => setIsOpen(!isOpen)} />
+      <NavbarButton isOpen={isOpen} handleSubmit={() => setIsOpen(!isOpen)} />
       <NavMenu>{listNavbarElements}</NavMenu>
       <NavMenuMobile isOpen={isOpen}>
         {listNavbarElements}
