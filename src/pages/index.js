@@ -1,19 +1,12 @@
-import styled from "styled-components";
-
-const Container = styled.div`
-  ${(props) => props.theme.mixins.flexCenter}
-
-  @media ${(props) => props.theme.bp.laptop} {
-    background-color: red;
-  }
-`;
+import LandingSection from "../components/LandingSection";
 
 export default function Home() {
   return (
     <>
-      <Container>
-        <h1>This is the main</h1>
-      </Container>
+      <LandingSection />
+      <div>
+        <h1>Next section...</h1>
+      </div>
     </>
   );
 }
