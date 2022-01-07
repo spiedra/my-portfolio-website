@@ -22,6 +22,11 @@ const IntroContainer = styled.article`
     text-align: inherit;
     font-size: 23px;
     margin-left: 3rem;
+    margin-right: 1rem;
+  }
+
+  @media ${(props) => props.theme.bp.laptop} {
+    margin-right: 0rem;
   }
 `;
 
