@@ -95,7 +95,7 @@ export default function AboutSection() {
           <Highlighter>Full-Stack Developer</Highlighter>
         </Subtitle>
         <Description>
-          Currently I'm studying Business Informatics at University of Costa
+          Currently I&apos;m studying Business Informatics at University of Costa
           Rica. My interest in technology started when I was a child and
           continues to grow to this day, that makes me really love to learn and
           create new things.
