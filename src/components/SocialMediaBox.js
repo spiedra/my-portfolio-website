@@ -45,12 +45,22 @@ const SocialMediaMenu = styled.ul`
   }
 `;
 
+const SocialMediaItem = styled.li`
+  @media ${(props) => props.theme.bp.tablet} {
+    transition: var(--btn-transition);
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+`;
+
 const listSocialMediaElements = socialMediaElements.map((element, index) => (
-  <li key={index}>
+  <SocialMediaItem key={index}>
     <a href={element.route} target="_blank" rel="noreferrer">
       {element.icon}
     </a>
-  </li>
+  </SocialMediaItem>
 ));
 
 export default function SocialMediaBox() {
