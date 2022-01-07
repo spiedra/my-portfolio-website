@@ -49,6 +49,8 @@ const MyName = styled.h1`
 `;
 
 const CurriculumButton = styled.button`
+  position: relative;
+  z-index: 50;
   padding: 10px 20px;
   text-align: center;
   font-size: 18px;
