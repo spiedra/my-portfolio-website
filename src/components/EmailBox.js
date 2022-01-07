@@ -37,7 +37,7 @@ const EmailLink = styled.a`
 export default function EmailBox() {
   return (
     <EmailContainer>
-      <EmailLink href="">jcspiedra@gmail.com</EmailLink>
+      <EmailLink href="mailto:jcspiedra@gmail.com">jcspiedra@gmail.com</EmailLink>
     </EmailContainer>
   );
 }
