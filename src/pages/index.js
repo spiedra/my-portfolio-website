@@ -1,3 +1,4 @@
+import AboutSection from "../components/AboutSection";
 import LandingSection from "../components/LandingSection";
 import SocialMediaBox from "../components/SocialMediaBox";
 
@@ -6,9 +7,7 @@ export default function Home() {
     <>
       <SocialMediaBox />
       <LandingSection />
-      <div>
-        <h1>Next section...</h1>
-      </div>
+      <AboutSection />
     </>
   );
 }
