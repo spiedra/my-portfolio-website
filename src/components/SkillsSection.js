@@ -10,6 +10,7 @@ import SvgJava from "./SvgComponents/SvgJava";
 import SvgGit from "./SvgComponents/SvgGit";
 import SvgReact from "./SvgComponents/SvgReact";
 import SvgNode from "./SvgComponents/SvgNode";
+import SvgPython from "./SvgComponents/SvgPython";
 
 const skillsElements = [
   { name: "Html", icon: <SvgHtml /> },
@@ -19,7 +20,7 @@ const skillsElements = [
   { name: "C", icon: <SvgCsharp /> },
   { name: "C++", icon: <SvgCplusplus /> },
   { name: "C Sharp", icon: <SvgCsharp /> },
-  { name: "Python", icon: <SvgCsharp /> },
+  { name: "Python", icon: <SvgPython /> },
   { name: "Java", icon: <SvgJava /> },
   { name: "Git", icon: <SvgGit /> },
   { name: "ReactJS", icon: <SvgReact /> },
