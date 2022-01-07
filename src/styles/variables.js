@@ -21,6 +21,11 @@ const variables = css`
 
     --nav-font-sizeS: 1.125rem;
     --nav-font-sizeL: 1.375rem;
+
+    --i-html: #ef6026;
+    --i-css: #2965f1;
+    --i-js: #f7df1e;
+    --i-php: #000;
   }
 `;
 
