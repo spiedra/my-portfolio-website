@@ -49,8 +49,9 @@ const SocialMediaItem = styled.li`
   @media ${(props) => props.theme.bp.tablet} {
     transition: var(--btn-transition);
 
-    &:hover {
-      transform: scale(1.2);
+    &:hover,
+    &:focus {
+      transform: translateY(-3px);
     }
   }
 `;
