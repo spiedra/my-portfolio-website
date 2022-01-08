@@ -11,13 +11,14 @@ import SvgGit from "./SvgComponents/SvgGit";
 import SvgReact from "./SvgComponents/SvgReact";
 import SvgNode from "./SvgComponents/SvgNode";
 import SvgPython from "./SvgComponents/SvgPython";
+import SvgC from "./SvgComponents/SvgC";
 
 const skillsElements = [
   { name: "Html", icon: <SvgHtml /> },
   { name: "Css", icon: <SvgCss /> },
   { name: "JavaScript", icon: <SvgJavascript /> },
   { name: "PHP", icon: <SvgPhp /> },
-  { name: "C", icon: <SvgCsharp /> },
+  { name: "C", icon: <SvgC /> },
   { name: "C++", icon: <SvgCplusplus /> },
   { name: "C Sharp", icon: <SvgCsharp /> },
   { name: "Python", icon: <SvgPython /> },
@@ -31,10 +32,11 @@ const Container = styled.section`
   ${(props) => props.theme.mixins.flexCenter}
   flex-direction: column;
   width: 90%;
-  padding-top: 4rem;
+  padding-top: 1.5rem;
 
   @media ${(props) => props.theme.bp.tablet} {
     width: 90%;
+    padding-top: 4rem;
   }
 `;
 

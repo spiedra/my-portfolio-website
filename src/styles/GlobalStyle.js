@@ -48,15 +48,6 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     flex: 1;
   }
-
-  footer {
-    display: flex;
-    flex: 1;
-    padding: 0.3rem 0;
-    border-top: 1px solid var(--green-cyan);
-    justify-content: center;
-    align-items: center;
-  }
 `;
 
 export default GlobalStyle;

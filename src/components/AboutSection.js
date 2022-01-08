@@ -5,7 +5,7 @@ const Container = styled.section`
   ${(props) => props.theme.mixins.flexCenter}
   flex-direction: column;
   width: 90%;
-  padding-top: 5rem;
+  padding-top: 1.5rem;
 
   @media ${(props) => props.theme.bp.tablet} {
     padding: 0;
