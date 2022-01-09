@@ -264,8 +264,8 @@ const listProjects = projectsElements.map((element, index) => (
 
 export default function ProjectSection() {
   return (
-    <Container id="projectSection">
-      <Title>02.Projects</Title>
+    <Container id="projects">
+      <Title>03.Projects</Title>
       <SubContainer>{listProjects}</SubContainer>
     </Container>
   );

@@ -33,7 +33,7 @@ export default function NavbarElement({ children }) {
   return (
     <NavItem>
       <Link href={children.route} passHref>
-        <NavLink>{children.text}</NavLink>
+        <NavLink onClick={children.setIsOpen}>{children.text}</NavLink>
       </Link>
     </NavItem>
   );

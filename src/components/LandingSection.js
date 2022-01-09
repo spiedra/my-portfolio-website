@@ -85,7 +85,7 @@ const CurriculumButton = styled.button`
 
 export default function LandingSection() {
   return (
-    <Container id="landingSection">
+    <Container id="about-me">
       <IntroContainer>
         <HiMessage>Hi, my name is</HiMessage>
         <MyName>Juan Carlos Sequeira Piedra</MyName>

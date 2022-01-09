@@ -92,7 +92,7 @@ const IterestItem = styled.li`
 
 export default function AboutSection() {
   return (
-    <Container id="aboutMeSection">
+    <Container>
       <IntroContainer>
         <Title>01.About me</Title>
         <Subtitle>
