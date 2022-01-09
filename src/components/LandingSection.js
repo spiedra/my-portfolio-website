@@ -90,7 +90,7 @@ export default function LandingSection() {
       <IntroContainer>
         <HiMessage>Hi, my name is</HiMessage>
         <MyName>Juan Carlos Sequeira Piedra</MyName>
-        <p>I am a business informatics student</p>
+        <p>I am a business computing student</p>
         <CurriculumButton
           href="https://drive.google.com/file/d/1kAwJAYOfSvJSOlzHZvYNhtkITj1NkyPa/view?usp=sharing"
           target="_blank"
