@@ -48,7 +48,7 @@ const MyName = styled.h1`
   color: var(--chetwode-blue);
 `;
 
-const CurriculumButton = styled.button`
+const CurriculumButton = styled.a`
   position: relative;
   z-index: 50;
   padding: 10px 20px;
@@ -64,6 +64,8 @@ const CurriculumButton = styled.button`
   border: 2px solid var(--chetwode-blue);
   border-radius: 30em;
   box-shadow: inset 0 0 0 0 var(--chetwode-blue);
+  -webkit-appearance: button;
+  appearance: button;
 
   &:hover {
     color: #ffff;
@@ -90,7 +92,13 @@ export default function LandingSection() {
         <HiMessage>Hi, my name is</HiMessage>
         <MyName>Juan Carlos Sequeira Piedra</MyName>
         <p>I am a business informatics student</p>
-        <CurriculumButton>Dowload CV</CurriculumButton>
+        <CurriculumButton
+          href="https://drive.google.com/file/d/1kAwJAYOfSvJSOlzHZvYNhtkITj1NkyPa/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Dowload CV
+        </CurriculumButton>
       </IntroContainer>
       <MainImageContainer>
         <SvgDeveloper />
