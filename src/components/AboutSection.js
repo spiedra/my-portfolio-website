@@ -100,13 +100,13 @@ export default function AboutSection() {
           <Highlighter>Full-Stack Developer</Highlighter>
         </Subtitle>
         <Description>
-          Currently I&apos;m studying Business Informatics at University of
+          Currently I&apos;m studying Business Computing at University of
           Costa Rica. My interest in technology started when I was a child and
           continues to grow to this day, that makes me really love to learn and
           create new things.
         </Description>
         <Interests>
-          Here are a few technologies/areas in which I am interested:
+          Here are a few technologies and areas in which I am interested:
         </Interests>
         <InterestsList>
           <IterestItem>Cybersecurity</IterestItem>
