@@ -49,6 +49,7 @@ const MyName = styled.h1`
 `;
 
 const CurriculumButton = styled.a`
+  display: inline-block;
   position: relative;
   z-index: 50;
   padding: 10px 20px;
@@ -64,8 +65,6 @@ const CurriculumButton = styled.a`
   border: 2px solid var(--chetwode-blue);
   border-radius: 30em;
   box-shadow: inset 0 0 0 0 var(--chetwode-blue);
-  -webkit-appearance: button;
-  appearance: button;
 
   &:hover {
     color: #ffff;
