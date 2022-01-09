@@ -7,8 +7,10 @@ const FooterContainer = styled.footer`
   font-size: 24px;
   text-align: center;
 
-  @media ${(props) => props.theme.bp.tablet} {
-    display: none;
+  div {
+    @media ${(props) => props.theme.bp.tablet} {
+      display: none;
+    }
   }
 `;
 
@@ -20,7 +22,9 @@ const FinalMessage = styled.span`
 export default function Footer() {
   return (
     <FooterContainer>
-      <SocialMediaBox />
+      <div>
+        <SocialMediaBox />
+      </div>
       <FinalMessage>© Jcspiedra - San José, Costa Rica 2021</FinalMessage>
     </FooterContainer>
   );
