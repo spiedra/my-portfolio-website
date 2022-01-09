@@ -129,6 +129,13 @@ const ProjectImgContainer = styled.div`
   position: relative;
   width: 100%;
   height: 150px;
+
+  transition: var(--btn-transition);
+
+&:hover,
+&:focus {
+  transform: scale(1.02);
+}
 `;
 
 const ProjectOutImgContainer = styled.div`
