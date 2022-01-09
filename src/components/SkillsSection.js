@@ -98,7 +98,7 @@ const listSkillsElements = skillsElements.map((element, index) => (
 
 export default function SkillsSection() {
   return (
-    <Container>
+    <Container id="skillsSection">
       <Title>02.Skills</Title>
       <Description>
         The skills I have acquired over the last few years learning and

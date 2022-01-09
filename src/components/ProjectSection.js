@@ -132,10 +132,10 @@ const ProjectImgContainer = styled.div`
 
   transition: var(--btn-transition);
 
-&:hover,
-&:focus {
-  transform: scale(1.02);
-}
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+  }
 `;
 
 const ProjectOutImgContainer = styled.div`
@@ -253,7 +253,7 @@ const listProjects = projectsElements.map((element, index) => (
 
 export default function ProjectSection() {
   return (
-    <Container>
+    <Container id="projectSection">
       <Title>02.Projects</Title>
       <SubContainer>{listProjects}</SubContainer>
     </Container>

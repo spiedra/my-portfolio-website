@@ -5,14 +5,14 @@ import NavbarButton from "./NavbarButton";
 import SocialMediaBox from "./SocialMediaBox";
 
 const navbarElements = [
-  { key: 1, route: "/", text: "About me" },
-  { key: 2, route: "/", text: "Skills" },
-  { key: 3, route: "/", text: "Projects" },
-  { key: 4, route: "/", text: "Contact" },
+  { route: "#landingSection", text: "About me" },
+  { route: "#skillsSection", text: "Skills" },
+  { route: "#projectSection", text: "Projects" },
+  { route: "/", text: "Contact" },
 ];
 
-const listNavbarElements = navbarElements.map((element) => (
-  <NavbarElement key={element.key}>
+const listNavbarElements = navbarElements.map((element, index) => (
+  <NavbarElement key={element.index}>
     {{ route: element.route, text: element.text }}
   </NavbarElement>
 ));
