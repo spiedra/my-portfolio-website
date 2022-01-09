@@ -1,4 +1,5 @@
 import AboutSection from "../components/AboutSection";
+import ContactSection from "../components/ContactSection";
 import EmailBox from "../components/EmailBox";
 import LandingSection from "../components/LandingSection";
 import ProjectSection from "../components/ProjectSection";
@@ -13,7 +14,8 @@ export default function Home() {
       <LandingSection />
       <AboutSection />
       <SkillsSection />
-      <ProjectSection/>
+      <ProjectSection />
+      <ContactSection />
     </>
   );
 }
