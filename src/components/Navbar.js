@@ -5,14 +5,14 @@ import NavbarButton from "./NavbarButton";
 import SocialMediaBox from "./SocialMediaBox";
 
 const navbarElements = [
-  { key: 1, route: "/", text: "About me" },
-  { key: 2, route: "/", text: "Skills" },
-  { key: 3, route: "/", text: "Projects" },
-  { key: 4, route: "/", text: "Contact" },
+  { route: "#about-me", text: "About me" },
+  { route: "#skills", text: "Skills" },
+  { route: "#projects", text: "Projects" },
+  { route: "#contact", text: "Contact" },
 ];
 
-const listNavbarElements = navbarElements.map((element) => (
-  <NavbarElement key={element.key}>
+const listNavbarElements = navbarElements.map((element, index) => (
+  <NavbarElement key={index}>
     {{ route: element.route, text: element.text }}
   </NavbarElement>
 ));
@@ -134,7 +134,15 @@ export default function Navbar() {
       <NavbarButton isOpen={isOpen} handleSubmit={() => setIsOpen(!isOpen)} />
       <NavMenu>{listNavbarElements}</NavMenu>
       <NavMenuMobile isOpen={isOpen}>
-        {listNavbarElements}
+        {navbarElements.map((element, index) => (
+          <NavbarElement key={index}>
+            {{
+              route: element.route,
+              text: element.text,
+              setIsOpen: () => setIsOpen(false),
+            }}
+          </NavbarElement>
+        ))}
         <SocialMediaBox />
       </NavMenuMobile>
     </Nav>

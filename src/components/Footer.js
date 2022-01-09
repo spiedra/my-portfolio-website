@@ -4,10 +4,15 @@ import SocialMediaBox from "./SocialMediaBox";
 const FooterContainer = styled.footer`
   ${(props) => props.theme.mixins.flexCenter}
   flex-direction: column;
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
+  margin-top: .5rem;
 
   div {
+    ${(props) => props.theme.mixins.flexCenter}
+    margin: 0;
+    padding: 0;
+    width: 100%;
     @media ${(props) => props.theme.bp.tablet} {
       display: none;
     }
