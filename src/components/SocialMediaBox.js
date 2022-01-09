@@ -19,7 +19,6 @@ const SocialMediaMenu = styled.ul`
   width: 50%;
   padding: 0;
   margin: 1.4rem 0;
-
   @media ${(props) => props.theme.bp.tablet} {
     justify-content: space-between;
     height: 38%;
@@ -33,7 +32,6 @@ const SocialMediaMenu = styled.ul`
     bottom: 0;
     width: auto;
     margin: 0;
-
     &:after {
       content: "";
       display: block;
@@ -48,7 +46,6 @@ const SocialMediaMenu = styled.ul`
 const SocialMediaItem = styled.li`
   @media ${(props) => props.theme.bp.tablet} {
     transition: var(--btn-transition);
-
     &:hover,
     &:focus {
       transform: translateY(-3px);

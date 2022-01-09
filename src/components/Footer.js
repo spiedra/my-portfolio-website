@@ -6,6 +6,10 @@ const FooterContainer = styled.footer`
   flex-direction: column;
   font-size: 24px;
   text-align: center;
+
+  @media ${(props) => props.theme.bp.tablet} {
+    display: none;
+  }
 `;
 
 const FinalMessage = styled.span`
