@@ -1,6 +1,7 @@
 import AboutSection from "../components/AboutSection";
 import EmailBox from "../components/EmailBox";
 import LandingSection from "../components/LandingSection";
+import ProjectSection from "../components/ProjectSection";
 import SkillsSection from "../components/SkillsSection";
 import SocialMediaBox from "../components/SocialMediaBox";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <LandingSection />
       <AboutSection />
       <SkillsSection />
+      <ProjectSection/>
     </>
   );
 }

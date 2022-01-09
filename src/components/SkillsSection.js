@@ -12,6 +12,10 @@ import SvgReact from "./SvgComponents/SvgReact";
 import SvgNode from "./SvgComponents/SvgNode";
 import SvgPython from "./SvgComponents/SvgPython";
 import SvgC from "./SvgComponents/SvgC";
+import SvgMysql from "./SvgComponents/SvgMysql";
+import SvgPostgre from "./SvgComponents/SvgPostgre";
+import SvgSqlServer from "./SvgComponents/SvgSqlServer";
+
 
 const skillsElements = [
   { name: "Html", icon: <SvgHtml /> },
@@ -23,9 +27,12 @@ const skillsElements = [
   { name: "C Sharp", icon: <SvgCsharp /> },
   { name: "Python", icon: <SvgPython /> },
   { name: "Java", icon: <SvgJava /> },
-  { name: "Git", icon: <SvgGit /> },
   { name: "ReactJS", icon: <SvgReact /> },
   { name: "NodeJS", icon: <SvgNode /> },
+  { name: "MySQL", icon: <SvgMysql /> },
+  { name: "PostgreSQL", icon: <SvgPostgre /> },
+  { name: "SQL Server", icon: <SvgSqlServer /> },
+  { name: "Git", icon: <SvgGit /> },
 ];
 
 const Container = styled.section`
