@@ -10,7 +10,7 @@ const projectsElements = [
   {
     name: "This Portfolio",
     description:
-      "Developed using the react Nextjs framework using Styled-components with icons from DevIcon and react-icons",
+      "Developed using the react Nextjs framework and Styled-components with icons from DevIcon and react-icons",
     repoLink: "https://github.com/spiedra/my-portfolio-website",
     technologies: [
       { techName: "React" },
