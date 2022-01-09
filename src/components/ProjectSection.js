@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import styled from "styled-components";
 
 import onlineStore from "../../public/images/onlineStore.jpg";
-import digitalManager from "../../public/images/digitalManager.jpg"
+import digitalManager from "../../public/images/digitalManager.jpg";
 
 const projectsElements = [
   {
@@ -244,7 +244,7 @@ const listProjects = projectsElements.map((element, index) => (
   </ProjectContainer>
 ));
 
-export default function ProjectSection () {
+export default function ProjectSection() {
   return (
     <Container>
       <Title>02.Projects</Title>
