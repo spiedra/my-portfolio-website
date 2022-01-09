@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { AiFillGithub } from "react-icons/ai";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import onlineStore from "../../public/images/onlineStore.jpg";
 import digitalManager from "../../public/images/digitalManager.jpg";
@@ -165,6 +165,17 @@ const ProjectName = styled.h2`
   color: ${(props) => (props.isImage ? "#000000" : "var(--chetwode-blue)")};
   margin-bottom: ${(props) => props.isImage && "0"};
   font-weight: 700;
+
+  transition: var(--btn-transition);
+
+  ${(props) =>
+    !props.isImage &&
+    css`
+      &:hover,
+      &:focus {
+        transform: scale(1.02);
+      }
+    `}
 `;
 
 const ProjectDescription = styled.p`
