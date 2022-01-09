@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { AiFillGithub } from "react-icons/ai";
-import styled, { css } from "styled-components";
-// import imgTest from "../../public/images/projectTest.png";
+import styled from "styled-components";
+
+import onlineStore from "../../public/images/onlineStore.jpg";
+import digitalManager from "../../public/images/digitalManager.jpg"
 
 const projectsElements = [
   {
@@ -10,7 +12,11 @@ const projectsElements = [
     description:
       "Developed in the react Nextjs framework using Styled-components with icons from DevIcon and react-icons",
     repoLink: "https://github.com/spiedra/my-portfolio-website",
-    technologies: [{ techName: "Next.js" }, { techName: "Styled-components" }],
+    technologies: [
+      { techName: "React" },
+      { techName: "Next.js" },
+      { techName: "Styled-components" },
+    ],
   },
   {
     name: "Android App Pokedex",
@@ -20,13 +26,52 @@ const projectsElements = [
     technologies: [{ techName: "Java" }, { techName: "Retrofit 2.0" }],
   },
   {
-    name: "This Portfolio",
+    name: "Online Store",
     description:
-      "Developed in the react Nextjs framework using Styled-components",
-    // img: imgTest,
-    link: "/",
-    repoLink: "/",
-    technologies: [{ techName: "Next.js" }, { techName: "Styled-components" }],
+      "Online store for cleaning and protection articles, developed with PHP, MVC, JQuery and Boostrap5 (college project)",
+    repoLink: "https://github.com/spiedra/online-store",
+    img: onlineStore,
+    technologies: [
+      { techName: "PHP" },
+      { techName: "MySQL" },
+      { techName: "JQuery" },
+      { techName: "Boostrap 5" },
+    ],
+  },
+  {
+    name: "Lavarel RESTful API",
+    description:
+      "RESTful movie API developed with laravel 8, MySQL with Eloquent ORM and migrations",
+    link: "https://lavarel-rest-ful-api.vercel.app/",
+    repoLink: "https://github.com/spiedra/online-store",
+    technologies: [
+      { techName: "PHP" },
+      { techName: "Laravel 8" },
+      { techName: "MySQL" },
+    ],
+  },
+  {
+    name: "Digital Manager",
+    description:
+      "Information system developed in conjunction with classmates for the automation of processes in support of a public institution, using ASP.NET Core MVC, SQL Server, Bootstrap 5 and JQuery (college project)",
+    repoLink: "https://github.com/spiedra/Gestor-Digital-ASADA-CL",
+    img: digitalManager,
+    technologies: [
+      { techName: "C#" },
+      { techName: "ASP.NET Core MVC" },
+      { techName: "SQL Server" },
+    ],
+  },
+  {
+    name: "Digital Health Manger",
+    description:
+      "Developed in conjunction with other classmate, we created a plataform that allows to centralize information related to a digital health record using ASP.NET, SQL Server, JQuery and Boostrap 5 (college project)",
+    repoLink: "https://github.com/spiedra/IF4101-digital-health-web",
+    technologies: [
+      { techName: "C#" },
+      { techName: "ASP.NET Core MVC" },
+      { techName: "SQL Server" },
+    ],
   },
 ];
 
@@ -117,7 +162,7 @@ const ProjectName = styled.h2`
 
 const ProjectDescription = styled.p`
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
   margin-top: 0.5rem;
 `;
 
@@ -160,7 +205,7 @@ const listProjects = projectsElements.map((element, index) => (
             <Image
               src={element.img}
               layout="fill"
-              objectFit="fill"
+              objectFit="cover"
               placeholder="blur"
             />
           </ProjectImgContainer>
@@ -199,7 +244,7 @@ const listProjects = projectsElements.map((element, index) => (
   </ProjectContainer>
 ));
 
-export default function () {
+export default function ProjectSection () {
   return (
     <Container>
       <Title>02.Projects</Title>
