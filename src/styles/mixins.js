@@ -13,6 +13,12 @@ const mixins = {
     align-items: center;
   `,
 
+  flexEvenly: css`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  `,
+
   link: css`
     text-decoration: none;
     color: inherit;
