@@ -96,7 +96,7 @@ export default function LandingSection() {
           target="_blank"
           rel="noreferrer"
         >
-          Dowload CV
+          Download CV
         </CurriculumButton>
       </IntroContainer>
       <MainImageContainer>
