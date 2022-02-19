@@ -46,7 +46,6 @@ const GlobalStyle = createGlobalStyle`
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
-    min-width: 100vw;
     flex: 1;
   }
 `;
