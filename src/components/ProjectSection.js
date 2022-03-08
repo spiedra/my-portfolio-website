@@ -52,14 +52,14 @@ const projectsElements = [
   {
     name: "Online Store",
     description:
-      "Online store for cleaning and protection articles, developed with PHP, MVC, JQuery and Boostrap5 (college project)",
+      "Online store for cleaning and protection articles, developed with PHP, MVC, JQuery and Bootstrap 5 (college project)",
     repoLink: "https://github.com/spiedra/online-store",
     img: onlineStore,
     technologies: [
       { techName: "PHP" },
       { techName: "MySQL" },
       { techName: "JQuery" },
-      { techName: "Boostrap 5" },
+      { techName: "Bootstrap 5" },
     ],
   },
   {
@@ -67,7 +67,7 @@ const projectsElements = [
     description:
       "RESTful movie API developed with laravel 8, MySQL with Eloquent ORM and migrations",
     link: "https://lavarel-rest-ful-api.vercel.app/",
-    repoLink: "https://github.com/spiedra/online-store",
+    repoLink: "https://github.com/spiedra/lavarel-RESTful-api",
     technologies: [
       { techName: "PHP" },
       { techName: "Laravel 8" },
@@ -89,7 +89,7 @@ const projectsElements = [
   {
     name: "Digital Health Manger",
     description:
-      "Developed in conjunction with other classmate, we created a plataform that allows to centralize information related to a digital health record using ASP.NET, SQL Server, JQuery and Boostrap 5 (college project)",
+      "Developed in conjunction with other classmate, we created a plataform that allows to centralize information related to a digital health record using ASP.NET, SQL Server, JQuery and Bootstrap 5 (college project)",
     repoLink: "https://github.com/spiedra/IF4101-digital-health-web",
     technologies: [
       { techName: "C#" },
