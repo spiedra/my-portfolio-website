@@ -52,7 +52,7 @@ const projectsElements = [
   {
     name: "Online Store",
     description:
-      "Online store for cleaning and protection articles, developed with PHP, MVC, JQuery and Bootstrap5 (college project)",
+      "Online store for cleaning and protection articles, developed with PHP, MVC, JQuery and Bootstrap 5 (college project)",
     repoLink: "https://github.com/spiedra/online-store",
     img: onlineStore,
     technologies: [
@@ -67,7 +67,7 @@ const projectsElements = [
     description:
       "RESTful movie API developed with laravel 8, MySQL with Eloquent ORM and migrations",
     link: "https://lavarel-rest-ful-api.vercel.app/",
-    repoLink: "https://github.com/spiedra/online-store",
+    repoLink: "https://github.com/spiedra/lavarel-RESTful-api",
     technologies: [
       { techName: "PHP" },
       { techName: "Laravel 8" },
