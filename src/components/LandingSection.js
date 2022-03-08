@@ -92,7 +92,7 @@ export default function LandingSection() {
         <MyName>Juan Carlos Sequeira Piedra</MyName>
         <p>I am a business computing student</p>
         <CurriculumButton
-          href="https://drive.google.com/file/d/1IUaPrteSRkCpfd9Us-EeKkdPBOVGeXLT/view?usp=sharing"
+          href="https://drive.google.com/file/d/14dpRlpYlf_cmyzxN9yGN8SWYjg0u3nV2/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
