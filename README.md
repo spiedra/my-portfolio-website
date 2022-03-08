@@ -6,6 +6,33 @@ My personal website
 - Styled Components
 - ESLint
 
+## Getting Started
+
+Prerequisites
+
+- git
+- node.js
+
+Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/spiedra/my-portfolio-website
+```
+
+2. Install npm packages
+
+```bash
+$ npm install
+```
+
+3. Run the project
+
+```bash
+$ npm run dev
+```
+
 ## Contributing
 If you want to make a contribution, please follow the next steps:
 
