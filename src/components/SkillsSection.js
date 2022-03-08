@@ -15,6 +15,7 @@ import SvgC from "./SvgComponents/SvgC";
 import SvgMysql from "./SvgComponents/SvgMysql";
 import SvgPostgre from "./SvgComponents/SvgPostgre";
 import SvgSqlServer from "./SvgComponents/SvgSqlServer";
+import SvgDocker from "./SvgComponents/SvgDocker";
 
 
 const skillsElements = [
@@ -33,6 +34,7 @@ const skillsElements = [
   { name: "PostgreSQL", icon: <SvgPostgre /> },
   { name: "SQL Server", icon: <SvgSqlServer /> },
   { name: "Git", icon: <SvgGit /> },
+  { name: "Docker", icon: <SvgDocker /> },
 ];
 
 const Container = styled.section`
