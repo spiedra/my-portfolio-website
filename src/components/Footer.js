@@ -30,7 +30,7 @@ export default function Footer() {
       <div>
         <SocialMediaBox />
       </div>
-      <FinalMessage>© Jcspiedra - San José, Costa Rica 2021</FinalMessage>
+      <FinalMessage>© Jcspiedra - San José, Costa Rica 2022</FinalMessage>
     </FooterContainer>
   );
 }

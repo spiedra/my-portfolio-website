@@ -8,6 +8,18 @@ import digitalManager from "../../public/images/digitalManager.jpg";
 
 const projectsElements = [
   {
+    name: "EN-Dictionary",
+    description:
+      "English dictionary web application developed with React, Styled-components, React Router v6, Docker and Axios",
+    link: "https://en-dictionary-spiedra.vercel.app/",
+    repoLink: "https://github.com/spiedra/en-dictionary",
+    technologies: [
+      { techName: "React" },
+      { techName: "Docker" },
+      { techName: "Axios" },
+    ],
+  },
+  {
     name: "This Portfolio",
     description:
       "Developed using the react Nextjs framework and Styled-components with icons from DevIcon and react-icons",
@@ -24,6 +36,18 @@ const projectsElements = [
       "Java android application. Using web services with Retrofit library and POKEDEX web api",
     repoLink: "https://github.com/spiedra/androidAppPokedex",
     technologies: [{ techName: "Java" }, { techName: "Retrofit 2.0" }],
+  },
+  {
+    name: "Word of the Day API",
+    description:
+      "A Word-of-the-Day API using Web Scrapping via the Cheerio library, the Node.js Express.js framework and Axios",
+    link: "https://word-of-the-day-omega.vercel.app/word-of-the-day",
+    repoLink: "https://github.com/spiedra/word-of-the-day",
+    technologies: [
+      { techName: "Express.js" },
+      { techName: "Cheerio" },
+      { techName: "Axios" },
+    ],
   },
   {
     name: "Online Store",
@@ -225,6 +249,7 @@ const listProjects = projectsElements.map((element, index) => (
               layout="fill"
               objectFit="cover"
               placeholder="blur"
+              alt={`Image of ${element.name}`}
             />
           </ProjectImgContainer>
         </ProjectLink>
