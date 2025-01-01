@@ -31,10 +31,10 @@ const NavLink = styled.a`
 
 export default function NavbarElement({ children }) {
   return (
-    <NavItem>
-      <Link href={children.route} passHref>
+    (<NavItem>
+      <Link href={children.route} passHref legacyBehavior>
         <NavLink onClick={children.setIsOpen}>{children.text}</NavLink>
       </Link>
-    </NavItem>
+    </NavItem>)
   );
 }

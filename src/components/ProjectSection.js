@@ -246,11 +246,13 @@ const listProjects = projectsElements.map((element, index) => (
           <ProjectImgContainer>
             <Image
               src={element.img}
-              layout="fill"
-              objectFit="cover"
               placeholder="blur"
               alt={`Image of ${element.name}`}
-            />
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover"
+              }} />
           </ProjectImgContainer>
         </ProjectLink>
         <ProjectName isImage={true}>{element.name}</ProjectName>
