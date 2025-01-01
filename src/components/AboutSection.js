@@ -96,23 +96,32 @@ export default function AboutSection() {
       <IntroContainer>
         <Title>01.About me</Title>
         <Subtitle>
-          My main focus is to become a{" "}
-          <Highlighter>Full-Stack Developer</Highlighter>
+          I&apos;m a Cybersecurity Professional with a passion for{" "}
+          <Highlighter>Offensive Security</Highlighter>.
         </Subtitle>
         <Description>
-          Currently I&apos;m studying Business Computing at University of
-          Costa Rica. My interest in technology started when I was a child and
-          continues to grow to this day, that makes me really love to learn and
-          create new things.
+          I&apos;ve always been fascinated by technology, and over the years,
+          that curiosity turned into a love for hacking (the ethical kind, of
+          course!). I&apos;ve been diving into adversary emulation, post-breach
+          attacks, and testing zero-day exploits. I also love working with the
+          blue team to fine-tune defense strategies and make systems more
+          resilient. And of course automate stuff...
+        </Description>
+        <Description>
+          I&apos;m always looking to learn and improve, so you&apos;ll often
+          find me diving into CTF competitions or experimenting with new tools
+          and techniques. One day, I&apos;d love to give back to the community
+          by building open-source tools, sharing what I know at conferences, and
+          helping others get into this awesome field.
         </Description>
         <Interests>
-          Here are a few technologies and areas in which I am interested:
+          Here are a few things and areas I&apos;m interested in:
         </Interests>
         <InterestsList>
-          <IterestItem>Cybersecurity</IterestItem>
-          <IterestItem>DApps</IterestItem>
-          <IterestItem>Blockchain</IterestItem>
-          <IterestItem>Smart Contracts</IterestItem>
+          <IterestItem>Bug Bounty Hunting</IterestItem>
+          <IterestItem>AI</IterestItem>
+          <IterestItem>DevSecOps</IterestItem>
+          <IterestItem>CTF Competitions</IterestItem>
         </InterestsList>
       </IntroContainer>
       <MainImageContainer>
