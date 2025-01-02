@@ -12,7 +12,7 @@ import SvgReact from "./SvgComponents/SvgReact";
 import SvgNode from "./SvgComponents/SvgNode";
 import SvgPython from "./SvgComponents/SvgPython";
 import SvgC from "./SvgComponents/SvgC";
-import SvgMysql from "./SvgComponents/SvgMysql";
+import SvgJenkins from "./SvgComponents/SvgJenkins";
 import SvgPostgre from "./SvgComponents/SvgPostgre";
 import SvgSqlServer from "./SvgComponents/SvgSqlServer";
 import SvgDocker from "./SvgComponents/SvgDocker";
@@ -30,7 +30,7 @@ const skillsElements = [
   { name: "Java", icon: <SvgJava /> },
   { name: "ReactJS", icon: <SvgReact /> },
   { name: "NodeJS", icon: <SvgNode /> },
-  { name: "MySQL", icon: <SvgMysql /> },
+  { name: "Jenkins", icon: <SvgJenkins /> },
   { name: "PostgreSQL", icon: <SvgPostgre /> },
   { name: "SQL Server", icon: <SvgSqlServer /> },
   { name: "Git", icon: <SvgGit /> },
