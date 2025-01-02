@@ -16,7 +16,7 @@ import SvgJenkins from "./SvgComponents/SvgJenkins";
 import SvgGoogleCloud from "./SvgComponents/SvgGoogleCloud";
 import SvgMysql from "./SvgComponents/SvgMysql";
 import SvgDocker from "./SvgComponents/SvgDocker";
-
+import SvgTerraform from "./SvgComponents/SvgTerraform";
 
 const skillsElements = [
   { name: "Html", icon: <SvgHtml /> },
@@ -28,7 +28,7 @@ const skillsElements = [
   { name: "C Sharp", icon: <SvgCsharp /> },
   { name: "Python", icon: <SvgPython /> },
   { name: "Java", icon: <SvgJava /> },
-  { name: "ReactJS", icon: <SvgReact /> },
+  { name: "Terraform", icon: <SvgTerraform /> },
   { name: "NodeJS", icon: <SvgNode /> },
   { name: "Jenkins", icon: <SvgJenkins /> },
   { name: "GCP", icon: <SvgGoogleCloud /> },
@@ -103,8 +103,8 @@ export default function SkillsSection() {
     <Container id="skills">
       <Title>02.Skills</Title>
       <Description>
-        The skills I have acquired over the last few years learning and
-        developing projects
+        Here are some of the skills I&apos;ve developed over the past few years
+        through learning, building projects, and hands-on experience
       </Description>
       <ToolkitContainer>{listSkillsElements}</ToolkitContainer>
     </Container>

@@ -1,3 +1,5 @@
+import React from "react";
+
 const SvgHtml = () => {
   return (
     <svg viewBox="0 0 128 128" height={64} width={64}>
