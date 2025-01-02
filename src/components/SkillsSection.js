@@ -8,7 +8,6 @@ import SvgCplusplus from "./SvgComponents/SvgCplusplus";
 import SvgCsharp from "./SvgComponents/SvgCsharp";
 import SvgJava from "./SvgComponents/SvgJava";
 import SvgGit from "./SvgComponents/SvgGit";
-import SvgReact from "./SvgComponents/SvgReact";
 import SvgNode from "./SvgComponents/SvgNode";
 import SvgPython from "./SvgComponents/SvgPython";
 import SvgC from "./SvgComponents/SvgC";
