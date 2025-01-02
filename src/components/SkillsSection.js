@@ -8,15 +8,14 @@ import SvgCplusplus from "./SvgComponents/SvgCplusplus";
 import SvgCsharp from "./SvgComponents/SvgCsharp";
 import SvgJava from "./SvgComponents/SvgJava";
 import SvgGit from "./SvgComponents/SvgGit";
-import SvgReact from "./SvgComponents/SvgReact";
 import SvgNode from "./SvgComponents/SvgNode";
 import SvgPython from "./SvgComponents/SvgPython";
 import SvgC from "./SvgComponents/SvgC";
+import SvgJenkins from "./SvgComponents/SvgJenkins";
+import SvgGoogleCloud from "./SvgComponents/SvgGoogleCloud";
 import SvgMysql from "./SvgComponents/SvgMysql";
-import SvgPostgre from "./SvgComponents/SvgPostgre";
-import SvgSqlServer from "./SvgComponents/SvgSqlServer";
 import SvgDocker from "./SvgComponents/SvgDocker";
-
+import SvgTerraform from "./SvgComponents/SvgTerraform";
 
 const skillsElements = [
   { name: "Html", icon: <SvgHtml /> },
@@ -28,11 +27,11 @@ const skillsElements = [
   { name: "C Sharp", icon: <SvgCsharp /> },
   { name: "Python", icon: <SvgPython /> },
   { name: "Java", icon: <SvgJava /> },
-  { name: "ReactJS", icon: <SvgReact /> },
+  { name: "Terraform", icon: <SvgTerraform /> },
   { name: "NodeJS", icon: <SvgNode /> },
+  { name: "Jenkins", icon: <SvgJenkins /> },
+  { name: "GCP", icon: <SvgGoogleCloud /> },
   { name: "MySQL", icon: <SvgMysql /> },
-  { name: "PostgreSQL", icon: <SvgPostgre /> },
-  { name: "SQL Server", icon: <SvgSqlServer /> },
   { name: "Git", icon: <SvgGit /> },
   { name: "Docker", icon: <SvgDocker /> },
 ];
@@ -103,8 +102,8 @@ export default function SkillsSection() {
     <Container id="skills">
       <Title>02.Skills</Title>
       <Description>
-        The skills I have acquired over the last few years learning and
-        developing projects
+        Here are some of the skills I&apos;ve developed over the past few years
+        through learning, building projects, and hands-on experience
       </Description>
       <ToolkitContainer>{listSkillsElements}</ToolkitContainer>
     </Container>

@@ -54,8 +54,10 @@ const ContactSection = () => {
     <Container id="contact">
       <Title>04.Contact</Title>
       <Description>
-        I am currently looking for internships to put into practice all the
-        knowledge I have acquired in the last few years.
+      I&apos;m not just passionate about what I do, I&apos;m also excited to
+        collaborate and learn from other professionals in the industry. Feel
+        free to reach out if you&apos;d like to discuss ideas, share knowledge,
+        or just connect.
       </Description>
       <ContactMeBtn href="mailto:jcspiedra@gmail.com">
         Send me an email
